@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 
       - Возвращаем оригинальный заголовок
-    -->
-    <title>Макет iPhone 17 Pro</title>
+    --><title>Макет iPhone 17 Pro</title>
     <!-- 
       - Загружаем Tailwind CSS.
-    -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    --><script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -21,13 +19,11 @@
   - min-h-screen: Минимальная высота 100% экрана.
   - flex flex-col: flex-контейнер, дочерние э-ты в колонку.
   - bg-black text-white: Черный фон, белый текст.
--->
-<body class="bg-black text-white min-h-screen flex flex-col">
+--><body class="bg-black text-white min-h-screen flex flex-col">
 
     <!-- 
       - Возвращаем оригинальную шапку с иконками
-    -->
-    <header class="w-full max-w-7xl mx-auto p-4 flex justify-end items-center sticky top-0 bg-black bg-opacity-80 backdrop-blur-sm z-10">
+    --><header class="w-full max-w-7xl mx-auto p-4 flex justify-end items-center sticky top-0 bg-black bg-opacity-80 backdrop-blur-sm z-10">
         
         <div class="flex items-center space-x-4">
             
@@ -44,25 +40,19 @@
     <!-- 
       - flex-grow: 'main' занимает все доступное место.
       - flex flex-col: Элементы внутри в колонку.
-    -->
-    <main class="flex-grow flex flex-col items-center p-4 text-center">
+      - items-center: Центрируем контент по горизонтали.
+    --><main class="flex-grow flex flex-col items-center p-4 text-center">
         
         <!-- 
-          - flex-grow: Этот контейнер "растет",
-            чтобы заполнить все место в 'main'.
+          - flex-grow: Этот контейнер "растет", чтобы заполнить все место в 'main'.
           - items-center justify-center: Центрируем картинку.
-        -->
-        <div class="w-full flex-grow flex items-center justify-center">
+        --><div class="w-full flex-grow flex items-center justify-center">
             
             <!-- 
-              - ВСТАВЛЯЕМ НОВУЮ ССЫЛКУ.
-              - Добавляем 'onerror' на случай, если ссылка
-                снова не сработает (покажет заглушку).
-              - h-full: Картинка пытается занять всю высоту
-                своего "растущего" родителя.
+              - НОВОЕ ИЗОБРАЖЕНИЕ по новой ссылке.
+              - h-full: Картинка пытается занять всю высоту своего "растущего" родителя.
               - object-contain: Сохраняет пропорции.
-            -->
-            <img src="https://cdn-uz.kursiv.media/wp-content/uploads/2025/09/photo_2025-09-13_17-29-10.jpg" 
+            --><img src="https://i.pinimg.com/736x/7e/3b/4a/7e3b4adc6e08f5fc439854176b174667.jpg" 
                  alt="Изображение iPhone 17 Pro" 
                  class="w-auto h-full object-contain"
                  onerror="this.src='https://placehold.co/600x1200/111111/FFFFFF?text=Image+Load+Error';this.onerror=null;">
@@ -71,9 +61,8 @@
         <!-- 
           - Кнопка.
           - my-4: Отступ сверху и снизу.
-          - ИЗМЕНЕНО: text-lg на text-sm для уменьшения шрифта.
-        -->
-        <a href="#" 
+          - text-sm для уменьшения шрифта.
+        --><a href="#" 
            class="bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-blue-700 transition-colors shadow-md my-4">
             Read more
         </a>
@@ -81,10 +70,7 @@
     </main>
 
     <!-- 
-      - Футер удален по просьбе пользователя
-    -->
-    
-
-</body>
+      - Футер удален
+    --></body>
 </html>
 
